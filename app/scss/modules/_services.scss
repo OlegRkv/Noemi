@@ -1,0 +1,81 @@
+.services {
+  padding-top: 60px;
+  background-color: $black;
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+   /*  display: flex;
+    flex-wrap: wrap;
+    list-style: none; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(300px, 413px) minmax(300px, 413px);
+    gap: 1px;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding: 27px 0 0 35px;
+    background-color: $grey;
+    transition: background-color 0.3s;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #1D1D22;
+      .services__item-link {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__img--coloring {
+    left: 70px;
+  }
+
+  &__img--care {
+    right: 20px;
+  }
+
+  &__img--cosmetology {
+    left: 70px;
+  }
+
+  &__img--depilation {
+    left: 0;
+  }
+
+  &__img--nail {
+    left: 0;
+  }
+
+  &__img--pedicure {
+    left: 60px;
+  }
+
+  &__img--shop {
+    bottom: 35px;
+  }
+
+  &__item-link {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+
+  &__link {
+    display: flex;
+  }
+}
