@@ -78,3 +78,48 @@ body {
   color: $rich-black;
   background-color: $orange;
 }
+
+.card {
+  text-align: center;
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__prices {
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 154.69%;
+  }
+
+  &__price--old {
+    padding-right: 5px;
+    color: #c2c2c2;
+    text-decoration: line-through;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: transparent;
+    color: $orange;
+    border: 1px solid $orange;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}

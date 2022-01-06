@@ -1,0 +1,28 @@
+.popular {
+  padding-top: 55px;
+  background-color: $rich-black;
+
+  &__title {
+    position: relative;
+    margin-bottom: 65px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 192px;
+      height: 2px;
+      top: 48px;
+      right: 0;
+      background-image: url("../images/icons/title-decor.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 26px;
+  }
+}
