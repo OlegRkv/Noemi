@@ -1,0 +1,32 @@
+.promo {
+  padding-top: 60px;
+  background-color: $rich-black;
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__box {
+    display: flex;
+    background-color: $white;
+    color: $rich-black;
+  }
+
+  &__content {
+    max-width: 600px;
+    padding-top: 60px;
+    padding-left: 140px;
+  }
+
+  &__content-title {
+    font-family: Jost;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 47px;
+  }
+
+  &__text {
+    max-width: 360px;
+    margin-bottom: 30px;
+  }
+}

@@ -66,6 +66,22 @@ body {
   line-height: 1.16;
 }
 
+.title--line {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 192px;
+    height: 2px;
+    top: 48px;
+    right: 0;
+    background-image: url("../images/icons/title-decor.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -77,6 +93,7 @@ body {
   letter-spacing: 2px;
   color: $rich-black;
   background-color: $orange;
+  border: 1px solid transparent;
 }
 
 .card {
