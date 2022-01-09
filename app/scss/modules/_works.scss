@@ -1,0 +1,74 @@
+.works {
+  padding-top: 50px;
+  background-color: $rich-black;
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+   &__wrapper-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 438px 492px 492px;
+    grid-template-areas: 
+    "works__img--1 works__img--1"
+    "works__img--4 works__img--5"
+    "works__img--8 works__img--5";
+  } 
+
+   &__wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 438px 418px 565px;
+    grid-template-areas:
+      "works__img--2 works__img--3"
+      "works__img--6 works__img--7"
+      "works__img--9 works__img--9";
+  } 
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__img--1 {
+    grid-area: works__img--1;
+  }
+
+  &__img--2 {
+    grid-area: works__img--2;
+  }
+
+  &__img--3 {
+    grid-area: works__img--3;
+  }
+
+  &__img--4 {
+    grid-area: works__img--4;
+  }
+
+  &__img--5 {
+    grid-area: works__img--5;
+  }
+
+  &__img--6 {
+    grid-area: works__img--6;
+  }
+
+  &__img--7 {
+    grid-area: works__img--7;
+  }
+
+  &__img--8 {
+    grid-area: works__img--8;
+  }
+
+  &__img--9 {
+    grid-area: works__img--9;
+  }
+}
