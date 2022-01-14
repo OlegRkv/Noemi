@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-family: Jost;
   font-weight: 500;
   font-size: 16px;
@@ -142,6 +143,8 @@ body {
 }
 
 .bottom {
+  position: relative;
+  padding-bottom: 170px;
   background-color: $rich-black;
   background-image: url("../images/bottom-bg.png");
   background-position: center center;
