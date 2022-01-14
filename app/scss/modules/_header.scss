@@ -5,6 +5,8 @@
   left: 0;
 
   &__menu {
+    position: relative;
     height: 69px;
+    z-index: 5;
   }
 }

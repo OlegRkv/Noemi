@@ -8,12 +8,13 @@
 
   &__list {
     display: flex;
+    height: 74vw;
   }
 
    &__wrapper-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 438px 492px 492px;
+    grid-template-rows: 30.8% 34.6% 34.6%;
     grid-template-areas: 
     "works__img--1 works__img--1"
     "works__img--4 works__img--5"
@@ -23,7 +24,7 @@
    &__wrapper-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 438px 418px 565px;
+    grid-template-rows: 30.8% 29.4% 39.8%;
     grid-template-areas:
       "works__img--2 works__img--3"
       "works__img--6 works__img--7"

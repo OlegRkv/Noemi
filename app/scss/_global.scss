@@ -140,3 +140,11 @@ body {
     }
   }
 }
+
+.bottom {
+  background-color: $rich-black;
+  background-image: url("../images/bottom-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

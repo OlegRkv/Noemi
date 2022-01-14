@@ -1,0 +1,54 @@
+.register {
+  padding: 75px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    max-width: 325px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -76px;
+      left: -137px;
+      width: 613px;
+      height: 641px;
+      background-image: url("../images/register-decor.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 170px;
+    z-index: 1;
+  }
+
+  &__button {
+    padding: 28px 49px;
+  }
+
+}
