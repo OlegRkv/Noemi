@@ -7,18 +7,47 @@
   background-repeat: no-repeat;
   overflow: hidden;
 
+  @media (max-width: 992px) {
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 140px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
     max-width: 705px;
     margin-bottom: 15px;
-    font-family: "Playfair+Display";
+    font-family: "Playfair Display";
     font-weight: 400;
     font-size: 81px;
     line-height: 1.1;
+
+    @media (max-width: 1200px) {
+      font-size: 77px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 55px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 39px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 28px;
+    }
   }
 
   &__advantages {
@@ -29,11 +58,53 @@
     align-content: flex-start;
     justify-content: flex-start;
     list-style: none;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      flex-basis: 50%;
+    }
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+
+    @media (max-width: 576px) {
+      display: flex;
+      flex-basis: 50%;
+      flex-wrap: wrap;
+    }
   }
 
   &__advantages-item {
     &:not(:last-child) {
       margin-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      flex: 1 0 auto;
+
+      &:first-child {
+        margin-right: 9px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      &:first-child {
+        margin-right: 0;
+      }
+      max-width: 125px;
+      width: 100%;
+      font-size: 13px;
     }
   }
 
@@ -52,13 +123,24 @@
     }
   }
 
+  &__link {
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+
+    @media (max-width: 576px) {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
   &__img-wrapper {
     position: relative;
-    width: 388px;
+    max-width: 388px;
     height: 650px;
     margin-bottom: -100px;
     border-radius: 190px;
-    z-index: 3;
+    z-index: 1;
 
     &::before {
       position: absolute;
@@ -72,6 +154,30 @@
       background-size: cover;
       background-repeat: no-repeat;
       z-index: -2;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+
+      @media (max-width: 576px) {
+        display: block;
+        width: 90%;
+        height: 100%;
+        top: 0;
+        left: 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    @media (max-width: 576px) {
+      width: 50%;
+      margin: 0 auto;
     }
   }
 }
