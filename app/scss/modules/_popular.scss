@@ -1,15 +1,77 @@
 .popular {
   padding-top: 55px;
+  padding-bottom: 55px;
   background-color: $rich-black;
 
   &__title {
     position: relative;
     margin-bottom: 65px;
+
+    @media (max-width: 992px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 28px;
+    }
+
+    &::after {
+      @media (max-width: 992px) {
+        top: 36px;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__list {
     display: flex;
     list-style: none;
     gap: 26px;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 45px;
+    }
+
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
+
+    .slick-arrow {
+      width: 50px;
+      top: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .slick-prev {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-65px);
+    }
+
+    .slick-next {
+      bottom: 0;
+      right: 50%;
+      transform: translateX(65px);
+    }
+  }
+
+  &__item {
+    @media (max-width: 1200px) {
+      margin-right: 25px;
+    }
+
+    @media (max-width: 576px) {
+      margin-right: 0;
+      
+      .card {
+        margin: 0 auto;
+      }
+    }
   }
 }
