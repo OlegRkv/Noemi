@@ -1,15 +1,32 @@
 .register {
   padding: 75px 0;
 
+  @media (max-width: 1024px) {
+    padding: 40px 0;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 620px) {
+      display: block;
+    }
   }
 
   &__box {
     max-width: 325px;
     width: 100%;
+
+    @media (max-width: 1200px) {
+      max-width: 270px;
+    }
+
+    @media (max-width: 620px) {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -17,14 +34,34 @@
     font-family: "Playfair Display", sans-serif;
     font-size: 60px;
     font-weight: 400;
+
+    @media (max-width: 1200px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 30px;
+    }
   }
 
   &__descr {
     margin-bottom: 25px;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
   }
 
   &__img-wrapper {
     position: relative;
+
+    @media (max-width: 992px) {
+      margin: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &::before {
       position: absolute;
@@ -38,6 +75,10 @@
       background-size: cover;
       background-repeat: no-repeat;
       z-index: 0;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 
@@ -49,6 +90,10 @@
 
   &__button {
     padding: 28px 49px;
+
+    @media (max-width: 1200px) {
+      padding: 20px;
+    }
   }
 
 }

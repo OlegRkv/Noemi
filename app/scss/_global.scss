@@ -312,4 +312,8 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 500px;
+  }
 }

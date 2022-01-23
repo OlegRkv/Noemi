@@ -39,7 +39,25 @@ $(function () {
   });
 
   $('.reviews__slider').slick({
-    slidesToShow: 2
+    slidesToShow: 2,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
 
   
@@ -74,4 +92,8 @@ $(function () {
       }
     ]
   });
+
+  if ($(window).width() <= 1024) {
+    $('.footer__address > br').remove();
+  }
 });
