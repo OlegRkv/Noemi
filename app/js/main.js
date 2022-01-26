@@ -73,6 +73,7 @@ $(function () {
     $('.works__img').unwrap();
   }
 
+  /* Slick slider */
   $('.works__list').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left.svg" alt="предыдущий слайд"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg" alt="следующий слайд слайд"></button>',
@@ -93,6 +94,26 @@ $(function () {
     ]
   });
 
+/* Fixed menu */
+  var element = $(".header");
+		var height_el = element.offset().top;
+		$(window).scroll(function() {
+			if($(window).scrollTop() > height_el) {
+				element.addClass("header--fixed");
+			} else {
+				element.removeClass("header--fixed");
+			}
+		});
+
+/* Smooth scroll */
+  $(".menu").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+/* Delete line break in address (footer) */
   if ($(window).width() <= 1024) {
     $('.footer__address > br').remove();
   }
